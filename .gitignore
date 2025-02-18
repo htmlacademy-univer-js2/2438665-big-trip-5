@@ -1,3 +1,7 @@
+/build
+/node_modules
+/.env
+
 # Файлы и папки операционной системы
 .DS_Store
 Thumbs.db
