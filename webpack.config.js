@@ -7,7 +7,7 @@ module.exports = {
     entry: './src/main.js', // Указываем точку входа
     output: {
         path: path.resolve(__dirname, './build'), // Абсолютный путь к директории сборки
-        filename: 'bundle.[contenthash].js', // Имя файла бандла
+        filename: './bundle.[contenthash].js', // Имя файла бандла
         clean: true,
     },
     module: {
@@ -37,7 +37,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './public/index.html', // Укажите путь к вашему шаблону
-            filename: 'index.html', // Имя выходного файла
+            filename: './index.html', // Имя выходного файла
         }),
     ],
 };
